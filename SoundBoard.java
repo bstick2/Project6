@@ -25,9 +25,9 @@ import javax.swing.JTextField;
 public class SoundBoard extends JFrame 
 {
 	private static final int FRAME_WIDTH = 1000;
-	private static final int FRAME_HEIGHT = 1200;
+	private static final int FRAME_HEIGHT = 1000;
 	
-	private Font font = new Font(Font.SANS_SERIF, Font.BOLD, 18); 
+	private Font font = new Font(Font.SANS_SERIF, Font.PLAIN, 14); 
 	
 	private ImageIcon branson = new ImageIcon("branson.png");
 	private ImageIcon alexis = new ImageIcon("alexis.png");
@@ -43,27 +43,27 @@ public class SoundBoard extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		Image b = branson.getImage();
-		Image newb = b.getScaledInstance(175, 120, Image.SCALE_SMOOTH);
+		Image newb = b.getScaledInstance(150, 100, Image.SCALE_SMOOTH);
 		branson = new ImageIcon(newb);
 		
 		Image a = alexis.getImage();
-		Image newa = a.getScaledInstance(130, 120, Image.SCALE_SMOOTH);
+		Image newa = a.getScaledInstance(110, 100, Image.SCALE_SMOOTH);
 		alexis = new ImageIcon(newa);
 		
 		Image p = pryce.getImage();
-		Image newp = p.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
+		Image newp = p.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
 		pryce = new ImageIcon(newp);
 		
 		Image l = logan.getImage();
-		Image newl = l.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
+		Image newl = l.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
 		logan = new ImageIcon(newl);
 		
 		Image h = hamzah.getImage();
-		Image newh = h.getScaledInstance(120, 120, Image.SCALE_SMOOTH);
+		Image newh = h.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
 		hamzah = new ImageIcon(newh);
 		
 		Image r = ryan.getImage();
-		Image newr = r.getScaledInstance(90, 120, Image.SCALE_SMOOTH);
+		Image newr = r.getScaledInstance(75, 100, Image.SCALE_SMOOTH);
 		ryan = new ImageIcon(newr);
 		
 		JPanel basePanel = new JPanel(new GridLayout(2,1));
